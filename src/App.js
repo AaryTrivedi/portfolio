@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, Nav, Container, Row } from 'react-bootstrap';
+import About from './Components/About';
+import Education from './Components/Education';
+import Experience from './Components/Experience';
+import Footer from './Components/Footer';
+import Services from './Components/Services';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar variant="primary">
+        <Container>
+          <Navbar.Brand>Aary Trivedi</Navbar.Brand>
+          <Nav className="ml-auto">
+            <Nav.Link active>Education</Nav.Link>
+            <Nav.Link>Services</Nav.Link>
+            <Nav.Link>Contact</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+      <Container>
+        <About />
+        <Education />
+        <Experience />
+        <br />
+        <Services />
+      </Container>
+      <br />
+      <Footer />
+    </>
   );
 }
 
