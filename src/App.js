@@ -23,7 +23,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <Navbar bg="light" variant="primary">
+        <Navbar bg="white" variant="primary">
           <Container>
             <Navbar.Brand>Aary Trivedi</Navbar.Brand>
             <Nav className="ml-auto">
