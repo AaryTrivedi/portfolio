@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Row, Col, Button } from 'react-bootstrap'
+import resume from '../assets/resume.docx';
+import cv from '../assets/cv.docx';
 
 export default class About extends Component {
     render() {
@@ -38,15 +40,15 @@ export default class About extends Component {
                             I write <strong>human readable</strong> code, so next developers can <strong>understand</strong> it.
                         </p>
                         <p className="f-14">
-                            <a href="#contact">Hire Me!</a> and get all <strong>solutions</strong> at <strong>one</strong> place.
+                            <a name="contact" className="link cursor-pointer" onClick={this.props.navigate}>Hire Me!</a> and get all <strong>solutions</strong> at <strong>one</strong> place.
                         </p>
                     </div>
                     <div className="actions">
-                        <Button as={'a'} href="/assets/AARY TRIVEDI RESUME.docx" download variant="primary" className="rounded-0">
+                        <Button as={'a'} href={resume} download variant="primary" className="rounded-0">
                             Resume
                         </Button>
                         &nbsp;&nbsp;&nbsp;&nbsp;
-                        <Button as={'a'} href="/assets/AARY TRIVEDI COVER LETTER.docx" download variant="info" className="rounded-0 cv-button">
+                        <Button as={'a'} href={cv} download variant="info" className="rounded-0 cv-button">
                             CV
                         </Button>
                     </div>

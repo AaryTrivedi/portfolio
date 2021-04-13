@@ -98,7 +98,8 @@ code {
 }
 
 .footer {
-  padding: 20px 0;
+  padding: 40px 0;
+  height: 500px;
   max-width: 100%;
   border-top: 1px solid #eee;
 }
@@ -130,4 +131,8 @@ code {
 
 .send-button {
   border-radius: 20px !important;
+}
+
+.link {
+  cursor: pointer;
 }
