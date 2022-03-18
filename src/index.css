@@ -20,8 +20,8 @@ code {
   font-size: 13px;
 }
 
-.h-500 {
-  height: 500px;
+.intro-container {
+  height: 325px;
 }
 
 .f-14 {
@@ -29,8 +29,17 @@ code {
 }
 
 .intro {
-  width: 80%;
+  width: 100%;
   border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.code-bg {
+  background-image: url("https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .greeting {

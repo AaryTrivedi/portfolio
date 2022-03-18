@@ -34,18 +34,18 @@ class App extends Component {
             </Nav>
           </Container>
         </Navbar>
+        <div ref={this.aboutRef}>
+          <About navigate={this.navigate} />
+        </div>
         <Container>
-          <div ref={this.aboutRef}>
-            <About navigate={this.navigate} />
-          </div>
-          <div ref={this.educationRef}>
+          <div className="mt-3" ref={this.educationRef}>
             <Education />
           </div>
-          <div ref={this.experienceRef}>
+          <div className="mt-3" ref={this.experienceRef}>
             <Experience />
           </div>
           <br />
-          <div ref={this.serviceRef}>
+          <div className="mt-3" ref={this.serviceRef}>
             <Services />
           </div>
         </Container>
